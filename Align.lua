@@ -1,11 +1,9 @@
--- If you're a aligner for Pendulum Hub I suggest you use the new align method.
 local plr = game.Players.LocalPlayer
 local chr = plr.Character
 getgenv() function Align(hat, part, a, b, c, d, e, f)
-    local hat2 = chr[hat].Handle -- The hat you choose
+    local hat2 = chr[hat] -- The hat you choose
     hat2:BreakJoints()
     local Weld = Instance.new("Weld", game.Players.LocalPlayer.Character)
-    -- Tips for past John (Tescalus)
 
     Weld.Part1 = hat2 -- (Hat)
     Weld.Part0 = part -- What your welding the hat to (has to be a BasePart)
@@ -31,4 +29,4 @@ getgenv() function Make_Parts_Transparent(part)
         end
     end
 end
-warn("This script uses the Pendulum Hub Align Method and Tools. Join the server for high quality scripts https://discord.gg/rgcA9v9PMz")
+
