@@ -12,7 +12,7 @@ getgenv() function Alignhat(hat, part, a, b, c, d, e, f)
     print("Aligned Hats")
 end
 getgenv() function Destroy_Mesh(hat)
-    local hat1 = game:GetService("Workspace").non[game.Players.LocalPlayer.Name][hat].Handle:FindFirstChildOfClass("SpecialMesh") or game.Players.LocalPlayer.Character[hat].Handle:FindFirstChildOfClass("SpecialMesh")
+    local hat1 = game.Players.LocalPlayer.Character.Reanimate[hat].Handle:FindFirstChildOfClass("SpecialMesh") or game.Players.LocalPlayer.Character[hat].Handle:FindFirstChildOfClass("SpecialMesh")
     hat1:Destroy()
 end
 getgenv() function Lerp_CFrame(part, cframe, duration)
