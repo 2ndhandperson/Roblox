@@ -1,7 +1,7 @@
 local plr = game.Players.LocalPlayer
 local chr = plr.Character
 getgenv() function Alignhat(hat, part, a, b, c, d, e, f)
-    local hat2 = chr[hat].Handle -- The hat you choose
+    local hat2 = chr[hat] -- The hat you choose
     hat2:BreakJoints()
     local Weld = Instance.new("Weld", game.Players.LocalPlayer.Character)
 
@@ -17,7 +17,7 @@ getgenv() function makepart(hatname, newname)
     chr[hatname]:destroy()
 end
 getgenv() function Destroy_Mesh(hat)
-    local hat1 = game.Players.LocalPlayer.Character.Reanimate[hat].Handle:FindFirstChildOfClass("SpecialMesh") or game.Players.LocalPlayer.Character[hat].Handle:FindFirstChildOfClass("SpecialMesh")
+    local hat1 = game.Players.LocalPlayer.Character.Reanimate[hat]:FindFirstChildOfClass("SpecialMesh") or game.Players.LocalPlayer.Character[hat]:FindFirstChildOfClass("SpecialMesh")
     hat1:Destroy()
 end
 getgenv() function Lerp_CFrame(part, cframe, duration)
