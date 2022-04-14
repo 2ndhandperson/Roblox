@@ -12,7 +12,7 @@ getgenv() function Alignhat(hat, part, a, b, c, d, e, f)
     print("Aligned Hats")
 end
 getgenv() function Alignfling(hat3, part2, g, h, i, j, k, l)
-    local hat4 = chr[hat3] -- The hat you choose
+    local hat4 = chr.Reanimate[hat3] -- The hat you choose
     hat4:BreakJoints()
     local Weld = Instance.new("Weld", game.Players.LocalPlayer.Character)
 
