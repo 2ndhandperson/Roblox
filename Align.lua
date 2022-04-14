@@ -11,17 +11,6 @@ getgenv() function Align(hat, part, a, b, c, d, e, f)
     Weld.C0 = CFrame.new(a,b,c)*CFrame.Angles(math.rad(d),math.rad(e),math.rad(f)) -- Offset & Angles
     print("Aligned Hats")
 end
-getgenv() function Alignreanim(hat, part, a, b, c, d, e, f)
-    local hat2 = chr.Reanimate[hat] -- The hat you choose
-    hat2:BreakJoints()
-    local Weld = Instance.new("Weld", game.Players.LocalPlayer.Character)
-
-    Weld.Part1 = hat2 -- (Hat)
-    Weld.Part0 = part -- What your welding the hat to (has to be a BasePart)
-
-    Weld.C0 = CFrame.new(a,b,c)*CFrame.Angles(math.rad(d),math.rad(e),math.rad(f)) -- Offset & Angles
-    print("Aligned Hats")
-end
 getgenv() function makepart(hatname, newname)
     chr[hatname].Handle.Name = newname
     chr[hatname][newname].Parent = chr
