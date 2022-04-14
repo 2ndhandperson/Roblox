@@ -11,17 +11,6 @@ getgenv() function Alignhat(hat, part, a, b, c, d, e, f)
     Weld.C0 = CFrame.new(a,b,c)*CFrame.Angles(math.rad(d),math.rad(e),math.rad(f)) -- Offset & Angles
     print("Aligned Hats")
 end
-getgenv() function Alignfling(fling, part, a, b, c, d, e, f)
-    local fling2 = chr[fling] -- The hat you choose
-    fling2:BreakJoints()
-    local Weld = Instance.new("Weld", game.Players.LocalPlayer.Character)
-
-    Weld.Part1 = fling2 -- (fling part)
-    Weld.Part0 = part -- What your welding the hat to (has to be a BasePart)
-
-    Weld.C0 = CFrame.new(a,b,c)*CFrame.Angles(math.rad(d),math.rad(e),math.rad(f)) -- Offset & Angles
-    print("Aligned Fling")
-end
 getgenv() function Destroy_Mesh(hat)
     local hat1 = game.Players.LocalPlayer.Character.Reanimate[hat].Handle:FindFirstChildOfClass("SpecialMesh") or game.Players.LocalPlayer.Character[hat].Handle:FindFirstChildOfClass("SpecialMesh")
     hat1:Destroy()
