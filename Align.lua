@@ -12,9 +12,9 @@ getgenv() function Alignhat(hat, part, a, b, c, d, e, f)
     print("Aligned Hats")
 end
 getgenv() function makepart(hatname, newname)
-    game.Players.LocalPlayer.Character[hatname].Handle.Name = newname
-    game.Players.LocalPlayer.Character[hatname][newname].Parent = game.Players.LocalPlayer.Character
-    game.Players.LocalPlayer.Character[hatname]:destroy()
+    chr[hatname].Handle.Name = newname
+    chr[hatname][newname].Parent = chr
+    chr[hatname]:destroy()
 end
 getgenv() function Destroy_Mesh(hat)
     local hat1 = game.Players.LocalPlayer.Character.Reanimate[hat].Handle:FindFirstChildOfClass("SpecialMesh") or game.Players.LocalPlayer.Character[hat].Handle:FindFirstChildOfClass("SpecialMesh")
