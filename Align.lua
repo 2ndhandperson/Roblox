@@ -11,6 +11,11 @@ getgenv() function Alignhat(hat, part, a, b, c, d, e, f)
     Weld.C0 = CFrame.new(a,b,c)*CFrame.Angles(math.rad(d),math.rad(e),math.rad(f)) -- Offset & Angles
     print("Aligned Hats")
 end
+getgenv() function makepart(hat, newname)
+    game.Players.LocalPlayer.Character[hat].Handle.Name = newname
+    game.Players.LocalPlayer.Character[hat][newname].Parent = game.Players.LocalPlayer.Character
+    game.Players.LocalPlayer.Character[hat]:destroy()
+end
 getgenv() function Destroy_Mesh(hat)
     local hat1 = game.Players.LocalPlayer.Character.Reanimate[hat].Handle:FindFirstChildOfClass("SpecialMesh") or game.Players.LocalPlayer.Character[hat].Handle:FindFirstChildOfClass("SpecialMesh")
     hat1:Destroy()
