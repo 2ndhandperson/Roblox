@@ -1,7 +1,7 @@
 local plr = game.Players.LocalPlayer
 local chr = plr.Character
 getgenv() function Alignhat(hat, part, a, b, c, d, e, f)
-    local hat2 = chr[hat] -- The hat you choose
+    local hat2 = chr.Reanimate[hat] -- The hat you choose
     hat2:BreakJoints()
     local Weld = Instance.new("Weld", game.Players.LocalPlayer.Character)
 
