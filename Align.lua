@@ -11,12 +11,12 @@ getgenv() function Alignhat(hat, part, a, b, c, d, e, f)
     Weld.C0 = CFrame.new(a,b,c)*CFrame.Angles(math.rad(d),math.rad(e),math.rad(f)) -- Offset & Angles
     print("Ran with no errors")
 end
-getgenv() function Alignbullet(bullet, part1, g, h, i, j, k, l)
-    local bullet2 = chr[bullet] -- The hat you choose
-    hat2:BreakJoints()
+getgenv() function Alignfling(fling, part1, g, h, i, j, k, l)
+    local fling2 = chr[fling] -- The hat you choose
+    fling2:BreakJoints()
     local Weld = Instance.new("Weld", game.Players.LocalPlayer.Character)
 
-    Weld.Part1 = bullet2 -- (Hat)
+    Weld.Part1 = fling2 -- (Hat)
     Weld.Part0 = part1 -- What your welding the hat to (has to be a BasePart)
 
     Weld.C0 = CFrame.new(a,b,c)*CFrame.Angles(math.rad(d),math.rad(e),math.rad(f)) -- Offset & Angles
