@@ -19,7 +19,6 @@ getgenv() function Alignfling(fling, part1, g, h, i, j, k, l)
     Weld.Part1 = fling2 -- (Hat)
     Weld.Part0 = part1 -- What your welding the hat to (has to be a BasePart)
 
-    Weld.C0 = CFrame.new(a,b,c)*CFrame.Angles(math.rad(d),math.rad(e),math.rad(f)) -- Offset & Angles
     print("Ran with no errors")
 end
 getgenv() function clearmesh(hat)
