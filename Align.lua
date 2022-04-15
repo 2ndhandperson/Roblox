@@ -13,6 +13,7 @@ getgenv() function Alignhat(hat, part, a, b, c, d, e, f)
 end
 getgenv() function Alignbullet(bullet, part1, g, h, i, j, k, l)
     local bullet2 = chr[bullet] -- The hat you choose
+    hat2:BreakJoints()
     local Weld = Instance.new("Weld", game.Players.LocalPlayer.Character)
 
     Weld.Part1 = bullet2 -- (Hat)
