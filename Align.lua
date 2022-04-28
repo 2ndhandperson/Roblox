@@ -1,7 +1,7 @@
 local plr = game.Players.LocalPlayer
 local chr = plr.Character
 getgenv() function align(hat, part, a, b, c, d, e, f)
-    local hat2 = chr[game.Players.LocalPlayer.Name][hat].Handle -- The hat you choose
+    local hat2 = chr[hat].Handle -- The hat you choose
     hat2:BreakJoints()
     local Weld = Instance.new("Weld", game.Players.LocalPlayer.Character)
     -- Tips for past John (Tescalus)
@@ -30,4 +30,3 @@ getgenv() function Make_Parts_Transparent(part)
         end
     end
 end
-
