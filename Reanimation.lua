@@ -42,7 +42,7 @@ local function notify(title,duration)
 end
 
 -- Checking if reanimated or not
-if workspace:FindFirstChild("non") then 
+if workspace:FindFirstChild("Reanimation") then 
 	notify("Already Reanimated?") 
 	error("Already Reanimated?") 
 end
@@ -227,7 +227,7 @@ else
 	Character.Parent = workspace
 end
 wait()
-Character.Name = "non"
+Character.Name = "Reanimation"
 
 getgenv.RealRig = OriginalRig
 getgenv.CloneRig = Character
