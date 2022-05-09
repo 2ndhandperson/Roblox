@@ -309,7 +309,7 @@ for i, v in pairs(cl:GetDescendants()) do
 end
 
 local model = Instance.new("Model", c)
-model.Name = model.ClassName
+model.Name = "Reanimation"
 
 model.Destroying:Connect(function()
 	model = nil
